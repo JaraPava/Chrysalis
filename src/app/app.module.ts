@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 
 import { CounterModule } from './counter/counter.module';
 import { ProductModule } from './products/product.module';
+import { HomeModule } from './home/home.module';
 
 
 
@@ -17,7 +18,8 @@ import { ProductModule } from './products/product.module';
     BrowserModule,
     // AppRoutingModule,
     CounterModule,
-    ProductModule
+    ProductModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
