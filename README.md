@@ -70,6 +70,34 @@ en el devDepencias son solamente herramientas de desarrollo.
 
 6. Y solo se desplegará la aplicación.
 
+# Extension.json
+Usualmente en esta extensión se pueden añadir paquetes recomendados y le recomiende un set de aplicaciones
+
+# Node_modules
+El .gitignore no sube esta carpeta al git. Todos esos node_modules se construyen cuando ejecuta el npm i.
+Ya que este comando reconstruye los node_modules.
+
+# Folder app. Estructura común al generar un nuevo componente
+En este folder es donde se construira la lógica de negocio. 
+Aquí se ubicarán los servicios y modulos.
+Y son los mismos archivos que la estan afuera de la raiz.
+  - app.component.css => Archivo .css
+  - app.component.html => Archivo .html
+  - app.component.spec.ts => Archivo que me ayudarán a ser el Testing.
+  - app.component.ts => Este archivo de typescript que tiene unos decoradores y referencias al html y al css.
+   que por defecto tiene un decorador y es una simple clase
+  y aquí se define el app-root, y 
+  - app.module.ts => Este es un modulo principal e importante. Hay cosas en las cuales hay que tener cuidado a
+  la hora de utilizarlo. 
+
+# Folder Assets
+Son recursos estaticos que nosotros vamos a subir.
+
+# .gitkeep
+Este archivo indica que el folder es importante y lo va a mantener
+
+
+
 # Bases
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.5.
