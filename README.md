@@ -110,8 +110,6 @@ Las siguientes directivas vienen incluidas dentro dle módulo `"CommonModule"` d
 2. `*ngFor`: Convierte el `<li>` en un template, y lo usa para duplicarlo basado en la cantidad de elementos dentro de la lista.
 3. `ngSwitch`: Condicionalmente cambia el contendio del `<div>` por el template que cumpla la condición.
 
-
-
 # Folder app. Estructura común al generar un nuevo componente
 En este folder es donde se construira la lógica de negocio. 
 Aquí se ubicarán los servicios y modulos.
@@ -124,6 +122,13 @@ Y son los mismos archivos que la estan afuera de la raiz.
   y aquí se define el app-root, y 
   - app.module.ts => Este es un modulo principal e importante. Hay cosas en las cuales hay que tener cuidado a
   la hora de utilizarlo. 
+
+# app.module.ts
+Un módulo es una simple clase que tiene un decorador y en si mismo es un agrupador.
+Osea que encapsula una funcionalidad de tal manera que si se necesita compartirla
+le facilitará y protegerá del mundo exterior.
+Son contenedores para realizar la cohesión de código que tiene un funcionamiento en común, este funcionamiento en común puede ser un flujo de trabajo o un conjunto de capacidades o código 
+dedicado a un dominio de aplicación
 
 # Folder Assets
 Son recursos estaticos que nosotros vamos a subir.
