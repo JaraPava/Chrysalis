@@ -104,6 +104,14 @@ Usualmente en esta extensión se pueden añadir paquetes recomendados y le recom
 El .gitignore no sube esta carpeta al git. Todos esos node_modules se construyen cuando ejecuta el npm i.
 Ya que este comando reconstruye los node_modules.
 
+# Directivas Incluidas en Angular
+Las siguientes directivas vienen incluidas dentro dle módulo `"CommonModule"` de `@angular/common`
+1. `*ngIf`: Remueve o crea una parte del DOM basado en la expresión "showSection".
+2. `*ngFor`: Convierte el `<li>` en un template, y lo usa para duplicarlo basado en la cantidad de elementos dentro de la lista.
+3. `ngSwitch`: Condicionalmente cambia el contendio del `<div>` por el template que cumpla la condición.
+
+
+
 # Folder app. Estructura común al generar un nuevo componente
 En este folder es donde se construira la lógica de negocio. 
 Aquí se ubicarán los servicios y modulos.
