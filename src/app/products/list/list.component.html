@@ -1,8 +1,17 @@
 <h2>Listado de Productos</h2>
 
-<h3>Producto borrado <small class="text-danger">XXXXX</small></h3>
-<h3>Producto no se ha borrado</h3>
-<button class="btn btn-outline-danger">Borrar último producto</button>
+<!-- No tiene sentido que esto se use dos veces por que el cambio de Angular lo hace dos veces -->
+<!-- <h3 *ngIf="deletedProductName">Producto borrado <small class="text-danger">{{deletedProductName}}</small></h3>
+<h3 *ngIf="!deletedProductName">No se ha borrado aún ningún producto</h3> -->
+
+<!-- Uso del ng-template dice que si no se cumple el ngIf entonces ira al template de este .html (referencia local)-->
+<h3 *ngIf="deletedProductName else nothingWasDeleted">Producto borrado <small class="text-danger">{{deletedProductName}}</small></h3>
+
+<ng-template #nothingWasDeleted>
+  <h3>No se ha borrado <small class="text-danger">{{deletedProductName}}</small></h3>
+</ng-template>
+
+<button *ngIf="productNames.length > 0" class="btn btn-outline-danger" (click)="removeLastProduct()">Borrar último producto</button>
 
 <ul class="mt-2 list-group">
   <li *ngFor="let name of productNames" class="list-group-item">
