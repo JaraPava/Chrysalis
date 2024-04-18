@@ -30,12 +30,16 @@ export class ProductComponent {
   };
 
   changePrice():void{
-    this.price = 10.23
+    this.price = 100
   };
 
-  reset():void{
-    this.title = "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops";
+  resetForm():void{
+    // this.title = "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops";
     this.price = 109.95;
+    //Se puede agregar lenguaje javascript
+    // document.querySelectorAll('h1').forEach(element =>{
+    //   element.innerHTML = '<h1>Desde Angular</h1>'
+    // });
   }
 
 }
