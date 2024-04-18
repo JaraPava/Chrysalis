@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 
 //ESTA UNA SIMPLE CLASE Y TIENE EXPORT POR SI SE QUIERE USAR POR OTRO LADO.
 export class AppComponent {
-  public title:string = 'Hola mundo';
+  public title:string = 'PÁGINA CHRYSALIS';
   public counter:number = 10;
 
   increaseBy(value:number):void{
