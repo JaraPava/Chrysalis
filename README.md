@@ -22,6 +22,33 @@ Cuando usamos ng-build va a tomar todas la dependencias y quitará todo lo que n
 Quitará la comunicación con el app.server y quitará cosas que no se van utilizar.
 El forms viene con este proyecto al momento de crear la aplicación.
 en el devDepencias son solamente herramientas de desarrollo.
+# Extensiones útiles para VS CODE
+1. Bookmarks -> "Marca las lineas y saltos y mucho mas"
+2. Bracket Pair Color DLW
+
+3. EditorConfig for VS Code
+
+4. Error Lens
+
+5. Git Graph
+
+6. Live Share
+
+7. Material Icon Theme
+
+8. Paste JSON as Code (Refresh)
+
+10. Thunder Client
+
+11. WLS
+
+12. JavaScript and TypeScript Nighly
+
+# Comandos para creación de componentes en Angular
+-`ng g component [name]`: 
+  Genera un nuevo componente en el [name], que peude ser también 
+  [paht/name]
+  Ejemplo: ng g component productos/producto
 
 # PRE-REQUISITOS 
 ## INSTALACIÓN DE NODE.JS v20.9.0
@@ -95,8 +122,6 @@ Son recursos estaticos que nosotros vamos a subir.
 
 # .gitkeep
 Este archivo indica que el folder es importante y lo va a mantener
-
-
 
 # Bases
 
