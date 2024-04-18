@@ -17,8 +17,12 @@
   <dd>{{image}}</dd>
 
   <td>Método:</td>
-  <dd>Álgun método</dd>
+  <dd>{{getProductDescription()}}</dd>
 
   <td>Capitalizado:</td>
-  <dd>nombre capitalizado</dd>
+  <dd>{{capitalizedName}}</dd>
+
+  <button class="btn btn-primary mx-2" (click)="changeTitle()">Cambiar nombre</button>
+  <button class="btn btn-primary" (click)="changePrice()">Cambiar precio</button>
+  <button class="btn btn-primary mx-2" (click)="reset()">Reset</button>
 </dl>
