@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-products-product',
   templateUrl: './product.component.html',
   styleUrl: './product.component.css'
 })
-export class ProductComponent {
+export class ProductComponent implements OnInit {
   public title:string = "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops";
   public price:number = 109.95;
   public description:string = "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday";
@@ -40,6 +40,10 @@ export class ProductComponent {
     // document.querySelectorAll('h1').forEach(element =>{
     //   element.innerHTML = '<h1>Desde Angular</h1>'
     // });
+  };
+
+  ngOnInit(): void {
+
   }
 
 }
