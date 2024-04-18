@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './product.component.css'
 })
 export class ProductComponent {
+  title:string = "";
+  price:number = 0;
+  description:string = "";
+  category:string = "";
+  image:string = "";
 
 }
