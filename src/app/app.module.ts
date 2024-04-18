@@ -3,10 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {CounterComponent} from '../app/counter/counter.component';
+import { ProductComponent } from './products/product/product.component';
+import { ListComponent } from './products/list/list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CounterComponent,
+    ProductComponent,
+    ListComponent,
   ],
   imports: [
     BrowserModule,
@@ -16,3 +22,4 @@ import { AppComponent } from './app.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
