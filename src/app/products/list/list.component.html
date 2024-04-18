@@ -1,1 +1,11 @@
-<p>list works!</p>
+<h2>Listado de Productos</h2>
+
+<h3>Producto borrado <small class="text-danger">XXXXX</small></h3>
+<h3>Producto no se ha borrado</h3>
+<button class="btn btn-outline-danger">Borrar último producto</button>
+
+<ul class="mt-2 list-group">
+  <li *ngFor="let name of productNames" class="list-group-item">
+    {{name}}
+  </li>
+</ul>
