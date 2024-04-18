@@ -11,5 +11,13 @@ export class ListComponent {
     'Mens Casual Premium Slim Fit T-Shirts',
     'Mens Cotton Jacket',
     'Mens Casual Slim Fit'
-  ]
+  ];
+
+  public deletedProductName?:string;
+
+  removeLastProduct():void{
+    const deletedProduct = this.productNames.pop();
+    this.deletedProductName = deletedProduct;
+    // this.productNames.pop();//Regresa un string o undefined por que si no borra nada el undefined es su valor
+  }
 }
