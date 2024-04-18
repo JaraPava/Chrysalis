@@ -45,10 +45,14 @@ en el devDepencias son solamente herramientas de desarrollo.
 12. JavaScript and TypeScript Nighly
 
 # Comandos para creación de componentes en Angular
--`ng g component [name]`: 
-  Genera un nuevo componente en el [name], que peude ser también 
+- `ng g component [name]`: 
+  Genera un nuevo componente en el [name], que puede ser también 
   [paht/name]
-  Ejemplo: ng g component productos/producto
+  Ejemplo: ng g component productos/producto.
+
+- `ng g m [name | path/name]` :
+  Genera un nuevo module con el nombre especificado o en la [path/name]
+  Ejemplo: ng g module home/home o ng g m products/product
 
 # PRE-REQUISITOS 
 ## INSTALACIÓN DE NODE.JS v20.9.0
