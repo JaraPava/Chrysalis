@@ -1,13 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Product } from '../../../home/interfaces/product.interface';
 
 @Component({
-  selector: 'app-products-list',
+  selector: 'products-list',
   templateUrl: './list.component.html',
   styleUrl: './list.component.css'
 })
 export class ListComponent {
 
+  @Input()
   public productList: Product[] = [{
     title: "Mens Casual Slim Fit",
     price: 15.99,
