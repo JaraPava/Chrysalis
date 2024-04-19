@@ -114,6 +114,9 @@ Las siguientes directivas vienen incluidas dentro dle módulo `"CommonModule"` d
 2. `*ngFor`: Convierte el `<li>` en un template, y lo usa para duplicarlo basado en la cantidad de elementos dentro de la lista.
 3. `ngSwitch`: Condicionalmente cambia el contendio del `<div>` por el template que cumpla la condición.
 
+# NgClass
+Este nos permite agregar clase de manera condicional
+`[ngClass] = "{'list-group-item-dark':isLast,'list-group-item-primary':isEven}`
 # Folder app. Estructura común al generar un nuevo componente
 En este folder es donde se construira la lógica de negocio. 
 Aquí se ubicarán los servicios y modulos.
