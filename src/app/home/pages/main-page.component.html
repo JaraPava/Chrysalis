@@ -3,7 +3,7 @@
 
 <div class="row">
   <div class="col">
-    <products-list [productList]="products"></products-list>
+    <products-list [productList]="products" (onDelete)="onDeleteProduct($event)"></products-list>
   </div>
   <div class="col">
     <products-add-product (onNewProduct)="onNewProduct($event)"></products-add-product>

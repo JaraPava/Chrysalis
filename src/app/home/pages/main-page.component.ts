@@ -46,6 +46,10 @@ export class MainPageComponent{
 
   onNewProduct(product:Product):void{
     this.products.push(product);
+  };
 
+  onDeleteProduct(index:number):void{
+    console.log({index})
+    this.products.splice(index,1); //Indicamos que borraremos solamente un elemento que el que es igual al índice
   }
 }
