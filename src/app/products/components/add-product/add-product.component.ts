@@ -19,5 +19,9 @@ export class AddProductComponent {
       count:0,
       rate:0
     }
-  }
+  };
+
+  emitProduct(){
+    console.log(this.product)
+  };
 }

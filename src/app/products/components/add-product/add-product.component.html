@@ -2,7 +2,9 @@
   <h4>Agregar Producto</h4>
   <input type="text" [(ngModel)]="product.title" name ="title" class="form-control mb-2" placeholder="Nombre">
   <input type="number"  [(ngModel)]="product.price" name="price" class="form-control mb-2" placeholder="Precio">
-  <button type="submit" class="btn btn-primary">
+  <button type="submit" class="btn btn-primary" (click)="emitProduct()">
     Agregar
   </button>
+
+  <pre>{{product | json}}</pre>
 </form>

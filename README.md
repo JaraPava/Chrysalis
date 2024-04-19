@@ -147,7 +147,7 @@ Ejemplo: `@Output() myEvent = new EventEmitter(); `
 - `@HostBinding`: Enlaza el elemento anfitrión (host) a la propiedad de la clase:
     `@HostBinding('class.valid').isValid`
 
-# [(ngModel)]
+# [(ngModel)] : Two Way Data Binding
 Cuando tenemos un (clic) el parentesis indica un evento y cuando tenemos
 [ ] es para asociar un atributo. Entonces [()] indica que se esta asignando un evento
 y un atributo al mismo tiempo.
@@ -157,6 +157,10 @@ Son recursos estaticos que nosotros vamos a subir.
 
 # .gitkeep
 Este archivo indica que el folder es importante y lo va a mantener
+
+# Pipes JSON
+Este nos convierte un objeto a JSON
+`<pre>{{product | json}}</pre>`
 
 # Bases
 
