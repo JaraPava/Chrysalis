@@ -152,6 +152,10 @@ Cuando tenemos un (clic) el parentesis indica un evento y cuando tenemos
 [ ] es para asociar un atributo. Entonces [()] indica que se esta asignando un evento
 y un atributo al mismo tiempo.
 
+# Singleton Services
+Servicios como Singleton. Como lo maneja Angular es con inyección de dependencias. Nosotros no nos vamos a preocupar de hacer una instancia del servicio. 
+Lo que vamos a hacer es inyectar el servio y ya podemos usar la instancia.
+
 # Folder Assets
 Son recursos estaticos que nosotros vamos a subir.
 
