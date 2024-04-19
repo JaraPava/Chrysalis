@@ -3,9 +3,9 @@
 
 <div class="row">
   <div class="col">
-    <products-list [productList]="products" (onDelete)="onDeleteProduct($event)"></products-list>
+    <products-list [productList]="serviceProduct.products" (onDelete)="serviceProduct.onDeleteProduct($event)"></products-list>
   </div>
   <div class="col">
-    <products-add-product (onNewProduct)="onNewProduct($event)"></products-add-product>
+    <products-add-product (onNewProduct)="serviceProduct.onNewProduct($event)"></products-add-product>
   </div>
 </div>
