@@ -45,8 +45,7 @@ export class MainPageComponent{
   ];
 
   onNewProduct(product:Product):void{
-    console.log('MainPage');
-    console.log(product);
+    this.products.push(product);
 
   }
 }
