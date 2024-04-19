@@ -134,6 +134,16 @@ le facilitará y protegerá del mundo exterior.
 Son contenedores para realizar la cohesión de código que tiene un funcionamiento en común, este funcionamiento en común puede ser un flujo de trabajo o un conjunto de capacidades o código 
 dedicado a un dominio de aplicación
 
+# Decoradores de clase para componentes 
+- ` @Input`: Define una propiedad que puede ser enviada desde el padre hacia el componente hijo.
+Ejemplo: `<my-cmp [myProperty]=“someExpression"> `
+
+- `@Output`: Define una salida del componente que el componente padre puede suscribirse para escuchar.
+Ejemplo: `@Output() myEvent = new EventEmitter(); `
+
+- `@HostBinding`: Enlaza el elemento anfitrión (host) a la propiedad de la clase:
+    `@HostBinding('class.valid').isValid`
+
 # Folder Assets
 Son recursos estaticos que nosotros vamos a subir.
 
