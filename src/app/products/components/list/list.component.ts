@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, EventEmitter, Output } from '@angular/core';
 import { Product } from '../../../home/interfaces/product.interface';
 
 @Component({
@@ -7,7 +7,9 @@ import { Product } from '../../../home/interfaces/product.interface';
   styleUrl: './list.component.css'
 })
 export class ListComponent {
-
+  @Output()
+  public onDelete:EventEmitter<number> = new EventEmitter();
+  // public onDelete = new EventEmitter<number>();
   @Input()
   public productList: Product[] = [{
     title: "Mens Casual Slim Fit",
@@ -20,11 +22,12 @@ export class ListComponent {
       count: 430
     }
   }]
-  // public deletedProductName?:string;
+  onDeleteProduct(index:number):void{
+    //TODO: Emitir el ID del producto
+    this.onDelete.emit(index);
+  };
 
-  // removeLastProduct():void{
-  //   const deletedProduct = this.productNames.pop();
-  //   this.deletedProductName = deletedProduct;
-  //   // this.productNames.pop();//Regresa un string o undefined por que si no borra nada el undefined es su valor
-  // }
+  onDeleteId(index:number):void{
+
+  }
 }
