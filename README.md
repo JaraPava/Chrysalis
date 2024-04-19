@@ -147,6 +147,11 @@ Ejemplo: `@Output() myEvent = new EventEmitter(); `
 - `@HostBinding`: Enlaza el elemento anfitrión (host) a la propiedad de la clase:
     `@HostBinding('class.valid').isValid`
 
+# [(ngModel)]
+Cuando tenemos un (clic) el parentesis indica un evento y cuando tenemos
+[ ] es para asociar un atributo. Entonces [()] indica que se esta asignando un evento
+y un atributo al mismo tiempo.
+
 # Folder Assets
 Son recursos estaticos que nosotros vamos a subir.
 
