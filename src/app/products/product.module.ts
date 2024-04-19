@@ -4,6 +4,7 @@ import { CommonModule } from "@angular/common";
 import { ListComponent } from "./components/list/list.component";
 import { ProductComponent } from "./components/product/product.component";
 import { AddProductComponent } from './components/add-product/add-product.component';
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations:[
@@ -17,7 +18,8 @@ import { AddProductComponent } from './components/add-product/add-product.compon
     AddProductComponent
   ],
   imports:[
-    CommonModule
+    CommonModule,
+    FormsModule
   ]
 })
 export class ProductModule{}
