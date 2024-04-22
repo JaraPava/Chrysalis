@@ -166,6 +166,21 @@ Este archivo indica que el folder es importante y lo va a mantener
 Este nos convierte un objeto a JSON
 `<pre>{{product | json}}</pre>`
 
+# SAAS
+SASS = Syntatically Awesome Stylesheet
+Ya se le considera un estándar en la industria.
+Compatible con muchos frameworks incluyendo Boostrap
+Prácticamente es un lenguaje de programación ya que tiene variables, funciones y mucho más.
+SASS Y Custom Properties (CSS)
+Ambos ofrecen variables y algunas funciones como calc() o min() max() etc en el caso de SASS son
+similares per también se puede utilizar.
+Boostrap esta agregando cada vez más custom properties.
+
+# VENTAJAS DE SASS
+Separación y orden en tus archivos.
+Mixins para evitar repetir código.
+Condicionales, Funciones y Mapas para poder crear componentes más avanzadas.
+
 # Bases
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.5.
